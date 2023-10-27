@@ -7,6 +7,7 @@ from converter import Converter
 from pathlib import Path
 import soundfile
 import os
+
 from config import TOKEN
 
 
@@ -49,6 +50,7 @@ if __name__ == '__main__':
     executor.start_polling(dp)
 
 
+
 --------------------------------------------------------------------------
 converter.py
 
@@ -73,3 +75,4 @@ class Converter:
 
     def __del__(self):
         os.remove(self.wav_file)
+
